@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   text-align: center;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.app h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D27E7E;
+  height: 2em;
 }
