@@ -1,0 +1,9 @@
+.powerpuff {
+  position: relative;
+}
+
+.powerpuff .part {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

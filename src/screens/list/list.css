@@ -8,6 +8,6 @@
   background-color: #ffeaea;
 }
 
-.list div {
+.list > div {
   margin-left: 2em;
 }
