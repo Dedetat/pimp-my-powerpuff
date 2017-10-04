@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
+import { PropTypes as MobxPropTypes } from 'mobx-react'
 import classnames from 'classnames'
 import Powerpuff from './powerpuff'
 import './list.css'
@@ -21,7 +21,9 @@ const List = ({ style, className, powerpuffs }) => {
 List.propTypes = {
   style: PropTypes.object,
   className: PropTypes.string,
-  powerpuffs: PropTypes.arrayOf(PropTypes.object),
+  powerpuffs: MobxPropTypes.observableArrayOf(PropTypes.shape({
+    id: PropTypes.string,
+  })),
 }
 
 List.defaultProps = {
@@ -30,4 +32,4 @@ List.defaultProps = {
   powerpuffs: [],
 }
 
-export default onlyUpdateForPropTypes(List)
+export default List

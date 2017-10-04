@@ -2,6 +2,7 @@
   "name": "powerpuff-yourself",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4000",
   "scripts": {
     "ci": "cross-env CI=true npm-run-all test lint",
     "lint": "npm-run-all lint:*",

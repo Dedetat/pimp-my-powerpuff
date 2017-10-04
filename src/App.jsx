@@ -4,11 +4,8 @@ import Screens from './screens'
 import createStore from './store'
 import './App.css'
 
-const store = createStore()
-store.fetch()
-
 export default () => (
-  <Provider store={store}>
+  <Provider store={createStore()}>
     <div className="app">
       <h1>Powerpuff yourself</h1>
 
