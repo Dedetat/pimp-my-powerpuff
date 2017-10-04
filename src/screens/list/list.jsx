@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
-import Add from './add'
 import Powerpuff from './powerpuff'
 import './list.css'
 
@@ -14,10 +13,6 @@ const List = ({ style, className, powerpuffs }) => {
 
   return (
     <div style={style} className={classes}>
-      {/* new puff */}
-      <Add />
-
-      {/* list */}
       {powerpuffs.map(({ id }) => <Powerpuff key={id} id={id} />)}
     </div>
   )

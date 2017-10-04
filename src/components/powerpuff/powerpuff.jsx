@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
-import Accessory from './accessory'
 import Dress from './dress'
 import Eye from './eye'
 import Hair from './hair'
@@ -37,7 +35,6 @@ const Powerpuff = ({ style, className, eye, dress, hair }) => {
       <Dress className="part" {...dress} />
       <Eye className="part" {...eye} />
       <Hair className="part" {...hair} />
-      <Accessory className="part" />
     </div>
   )
 }
@@ -58,4 +55,4 @@ Powerpuff.defaultProps = {
   hair: undefined,
 }
 
-export default onlyUpdateForPropTypes(Powerpuff)
+export default Powerpuff
