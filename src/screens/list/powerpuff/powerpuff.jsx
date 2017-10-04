@@ -6,7 +6,7 @@ import Card from '../card'
 import PowerpuffStylizer from '../../../components/powerpuff'
 import './powerpuff.css'
 
-const Powerpuff = ({ style, className, name, onClick }) => {
+const Powerpuff = ({ style, className, name, id, onClick }) => {
   const classes = classnames(
     className,
     'item-powerpuff-card',
@@ -17,7 +17,7 @@ const Powerpuff = ({ style, className, name, onClick }) => {
       {name}
 
       <div className="item-powerpuff-container">
-        <PowerpuffStylizer className="item-powerpuff-stylizer" />
+        <PowerpuffStylizer id={id} className="item-powerpuff-stylizer" />
       </div>
     </Card>
   )
@@ -27,6 +27,7 @@ Powerpuff.propTypes = {
   style: PropTypes.object,
   className: PropTypes.string,
   name: PropTypes.string,
+  id: PropTypes.string,
   onClick: PropTypes.func,
 }
 
@@ -35,6 +36,7 @@ Powerpuff.defaultProps = {
   className: '',
   name: undefined,
   onClick: undefined,
+  id: undefined,
 }
 
 export default onlyUpdateForPropTypes(Powerpuff)

@@ -13,21 +13,27 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "recompose": "^0.25.0"
+    "date-fns": "^1.28.5",
+    "lodash": "^4.17.4",
+    "mobx": "^3.3.0",
+    "mobx-react": "^4.3.3",
+    "mobx-state-tree": "^1.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "recompose": "^0.25.1",
+    "remotedev": "^0.2.7"
   },
   "devDependencies": {
     "cross-env": "^5.0.5",
-    "eslint": "^4.5.0",
+    "eslint": "^4.7.2",
     "eslint-cli": "^1.1.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-react": "^7.4.0",
     "npm-run-all": "^4.1.1",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.14"
   },
   "eslintConfig": {
     "parser": "babel-eslint",

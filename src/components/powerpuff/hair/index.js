@@ -1,1 +1,1 @@
-export { default } from './hair.container'
+export { default } from './hair'

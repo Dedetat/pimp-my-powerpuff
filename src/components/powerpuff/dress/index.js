@@ -1,1 +1,1 @@
-export { default } from './dress.container'
+export { default } from './dress'

@@ -1,1 +1,1 @@
-export { default } from './powerpuff'
+export { default } from './powerpuff.container'

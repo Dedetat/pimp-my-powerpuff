@@ -1,1 +1,1 @@
-export { default } from './eye.container'
+export { default } from './eye'

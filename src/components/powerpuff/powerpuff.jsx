@@ -8,7 +8,7 @@ import Eye from './eye'
 import Hair from './hair'
 import './powerpuff.css'
 
-const Powerpuff = ({ style, className }) => {
+const Powerpuff = ({ style, className, eye, dress, hair }) => {
   const classes = classnames(
     className,
     'powerpuff',
@@ -34,9 +34,9 @@ const Powerpuff = ({ style, className }) => {
       {/* eslint-enable */}
 
       {/* customizable parts */}
-      <Dress className="part" />
-      <Eye className="part" />
-      <Hair className="part" />
+      <Dress className="part" {...dress} />
+      <Eye className="part" {...eye} />
+      <Hair className="part" {...hair} />
       <Accessory className="part" />
     </div>
   )
@@ -45,11 +45,17 @@ const Powerpuff = ({ style, className }) => {
 Powerpuff.propTypes = {
   style: PropTypes.object,
   className: PropTypes.string,
+  eye: PropTypes.object,
+  dress: PropTypes.object,
+  hair: PropTypes.object,
 }
 
 Powerpuff.defaultProps = {
   style: {},
   className: '',
+  eye: undefined,
+  dress: undefined,
+  hair: undefined,
 }
 
 export default onlyUpdateForPropTypes(Powerpuff)

@@ -1,4 +1,10 @@
-import { defaultProps } from 'recompose'
+import { compose } from 'recompose'
+import { inject, observer } from 'mobx-react'
 import List from './list'
 
-export default defaultProps({ powerpuffs: [1, 2, 3, 4, 5, 6] })(List)
+export default compose(
+  inject(({ store }) => ({
+    powerpuffs: store.powerpuffs,
+  })),
+  observer,
+)(List)

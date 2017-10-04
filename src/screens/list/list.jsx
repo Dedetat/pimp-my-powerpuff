@@ -18,7 +18,7 @@ const List = ({ style, className, powerpuffs }) => {
       <Add />
 
       {/* list */}
-      {powerpuffs.map(id => <Powerpuff key={id} id={id} />)}
+      {powerpuffs.map(({ id }) => <Powerpuff key={id} id={id} />)}
     </div>
   )
 }
@@ -26,7 +26,7 @@ const List = ({ style, className, powerpuffs }) => {
 List.propTypes = {
   style: PropTypes.object,
   className: PropTypes.string,
-  powerpuffs: PropTypes.arrayOf(PropTypes.number),
+  powerpuffs: PropTypes.arrayOf(PropTypes.object),
 }
 
 List.defaultProps = {
