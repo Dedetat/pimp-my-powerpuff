@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
 
 const Hair1 = ({ style, className, color }) => {
@@ -36,4 +35,4 @@ Hair1.defaultProps = {
   color: '#ff7f2a',
 }
 
-export default onlyUpdateForPropTypes(Hair1)
+export default Hair1

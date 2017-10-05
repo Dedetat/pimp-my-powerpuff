@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
 import './card.css'
 
@@ -31,4 +30,4 @@ Card.defaultProps = {
   onClick: undefined,
 }
 
-export default onlyUpdateForPropTypes(Card)
+export default Card

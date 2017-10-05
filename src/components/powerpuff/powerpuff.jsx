@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { observer } from 'mobx-react'
 import classnames from 'classnames'
 import Dress from './dress'
 import Eye from './eye'
@@ -55,4 +56,4 @@ Powerpuff.defaultProps = {
   hair: undefined,
 }
 
-export default Powerpuff
+export default observer(Powerpuff)

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
 
 const Eye = ({ style, className, color }) => {
@@ -40,4 +39,4 @@ Eye.defaultProps = {
   color: '#ff00ff',
 }
 
-export default onlyUpdateForPropTypes(Eye)
+export default Eye

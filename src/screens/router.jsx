@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import classnames from 'classnames'
 import List from './list'
 
-const Router = ({ style, className, code }) => {
+const Router = ({ style, className, code = 'list' }) => {
   const classes = classnames(
     className,
   )
@@ -32,4 +31,4 @@ Router.defaultProps = {
   code: undefined,
 }
 
-export default onlyUpdateForPropTypes(Router)
+export default Router

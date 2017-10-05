@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
 import Hair1 from './hair-1'
 import Hair2 from './hair-2'
 
@@ -20,4 +19,4 @@ Hair.defaultProps = {
   type: undefined,
 }
 
-export default onlyUpdateForPropTypes(Hair)
+export default Hair

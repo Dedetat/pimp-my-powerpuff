@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForPropTypes } from 'recompose'
+import { observer } from 'mobx-react'
 import classnames from 'classnames'
 import Card from '../card'
 import PowerpuffStylizer from '../../../components/powerpuff'
@@ -39,4 +39,4 @@ Powerpuff.defaultProps = {
   id: undefined,
 }
 
-export default onlyUpdateForPropTypes(Powerpuff)
+export default observer(Powerpuff)

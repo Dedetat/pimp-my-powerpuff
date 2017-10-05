@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { PropTypes as MobxPropTypes } from 'mobx-react'
+import { PropTypes as MobxPropTypes, observer } from 'mobx-react'
 import classnames from 'classnames'
 import Powerpuff from './powerpuff'
 import './list.css'
@@ -32,4 +32,4 @@ List.defaultProps = {
   powerpuffs: [],
 }
 
-export default List
+export default observer(List)
