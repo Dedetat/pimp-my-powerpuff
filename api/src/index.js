@@ -1,5 +1,6 @@
 const Koa = require('koa')
 const bodyParser = require('koa-bodyparser')
+const serveStatic = require('koa-static')
 
 const PORT = process.env.PORT || 4000
 const app = new Koa()
@@ -26,8 +27,11 @@ const powerpuffs = [
   },
 ]
 
+app.use(serveStatic(__dirname + '/../build'))
 app.use(bodyParser())
 app.use(async (ctx) => {
+  if (!ctx.path.includes('/api')) return
+
   switch (ctx.method) {
     case 'GET': {
       ctx.body = powerpuffs
@@ -52,6 +56,7 @@ app.use(async (ctx) => {
     }
   }
 })
+
 app.listen(PORT)
 
 console.log(`[api] listen to ${PORT}`)
