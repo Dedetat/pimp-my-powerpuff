@@ -34,10 +34,19 @@ const Powerpuff = types
     )
   })
 
-const rebelle = Powerpuff.create('Aggressive rebelle')
+const Store = types
+  .model({
+    powerpuffs: types.optional(types.array(Powerpuff), []),
+  })
+  .actions(self => ({
+    addPowerpuff: (powerpuff) => { self.powerpuffs.push(powerpuff) },
+  }))
 
-// does print the age (direct access to the view)
-console.log(`${rebelle.name} is ${rebelle.age} years old :)`)
+const store = Store.create()
+console.log(JSON.stringify(store.toJSON(), null, 2))
 
-// doesnt print the age since this not a snapshot value
-console.log(JSON.stringify(rebelle.toJSON(), null, 2))
+store.addPowerpuff('Aggressive rebelle')
+store.addPowerpuff({ name: 'Belle', mood: 'happy' })
+console.log(JSON.stringify(store.toJSON(), null, 2))
+
+console.log(JSON.stringify(store.toJSON(), null, 2))
