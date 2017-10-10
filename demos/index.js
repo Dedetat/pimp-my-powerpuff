@@ -36,17 +36,18 @@ const Powerpuff = types
 
 const Store = types
   .model({
+    edited: types.maybe(types.reference(Powerpuff)),
     powerpuffs: types.optional(types.array(Powerpuff), []),
   })
   .actions(self => ({
     addPowerpuff: (powerpuff) => { self.powerpuffs.push(powerpuff) },
+    setEdited(powerpuff) { self.edited = powerpuff },
   }))
 
 const store = Store.create()
-console.log(JSON.stringify(store.toJSON(), null, 2))
-
 store.addPowerpuff('Aggressive rebelle')
 store.addPowerpuff({ name: 'Belle', mood: 'happy' })
 console.log(JSON.stringify(store.toJSON(), null, 2))
 
+store.setEdited(store.powerpuffs[1])
 console.log(JSON.stringify(store.toJSON(), null, 2))
