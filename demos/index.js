@@ -6,8 +6,8 @@ const Powerpuff = types
   })
 
 // both do work
-let rebelle = Powerpuff.create({ })
-console.log(JSON.stringify(rebelle.toJSON(), null, 2))
+let powerpuff = Powerpuff.create({ })
+console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
 
-rebelle = Powerpuff.create({ name: 'Rebelle' })
-console.log(JSON.stringify(rebelle.toJSON(), null, 2))
+powerpuff = Powerpuff.create({ name: 'Rebelle' })
+console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
