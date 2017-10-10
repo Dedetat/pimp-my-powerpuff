@@ -1,9 +1,10 @@
-const { isString, capitalize } = require('lodash')
+const { isString, capitalize, random } = require('lodash')
 const differenceInCalendarYears = require('date-fns/difference_in_calendar_years')
 const { types } = require('mobx-state-tree')
 
 const Powerpuff = types
   .model({
+    id: types.identifier(types.number),
     name: types.string,
     mood: types.enumeration(['happy', 'aggressive']),
     birthday: new Date(2014, 4, 18),
@@ -28,6 +29,7 @@ const Powerpuff = types
       {},
       snapshot,
       {
+        id: random(0, 1000),
         name,
         mood: mood.toLowerCase(),
       },
@@ -46,8 +48,11 @@ const Store = types
 
 const store = Store.create()
 store.addPowerpuff('Aggressive rebelle')
-store.addPowerpuff({ name: 'Belle', mood: 'happy' })
+store.addPowerpuff({ id: 1002, name: 'belle', mood: 'happy' })
 console.log(JSON.stringify(store.toJSON(), null, 2))
 
 store.setEdited(store.powerpuffs[1])
+console.log(JSON.stringify(store.toJSON(), null, 2))
+
+store.edited.setMood('aggressive')
 console.log(JSON.stringify(store.toJSON(), null, 2))
