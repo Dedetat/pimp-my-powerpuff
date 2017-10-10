@@ -26,7 +26,7 @@ const Powerpuff = types
       snapshot,
       {
         name,
-        mood,
+        mood: mood.toLowerCase(),
       },
     )
   })
