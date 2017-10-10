@@ -1,4 +1,4 @@
-const { isString } = require('lodash')
+const { isString, capitalize } = require('lodash')
 const differenceInCalendarYears = require('date-fns/difference_in_calendar_years')
 const { types } = require('mobx-state-tree')
 
@@ -9,6 +9,9 @@ const Powerpuff = types
     birthday: new Date(2014, 4, 18),
   })
   .actions(self => ({
+    afterCreate: () => {
+      self.name = capitalize(self.name)
+    },
     setMood: (mood) => { self.mood = mood },
   }))
   .views(self => ({
