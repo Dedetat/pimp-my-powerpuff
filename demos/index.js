@@ -1,6 +1,6 @@
 const { isString, capitalize, random } = require('lodash')
 const differenceInCalendarYears = require('date-fns/difference_in_calendar_years')
-const { types, onPatch } = require('mobx-state-tree')
+const { types, onSnapshot } = require('mobx-state-tree')
 
 const Powerpuff = types
   .model({
@@ -48,8 +48,8 @@ const Store = types
 
 const store = Store.create()
 
-onPatch(store, (data) => {
-  console.log('[store-patch]', data)
+onSnapshot(store, (data) => {
+  console.log('[store-snapshot]', data)
 })
 
 store.addPowerpuff('Aggressive rebelle')
