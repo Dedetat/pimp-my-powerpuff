@@ -2,12 +2,13 @@ const { types } = require('mobx-state-tree')
 
 const Powerpuff = types
   .model({
-    name: types.maybe(types.string),
+    name: types.string,
+    mood: types.enumeration(['happy', 'aggressive']),
   })
 
-// both do work
-let powerpuff = Powerpuff.create({ })
-console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
+// /!\ doesn't work since the mood 'sad' is not into the enumeration
+// const powerpuff = Powerpuff.create({ name: 'Rebelle', mood: 'sad' })
 
-powerpuff = Powerpuff.create({ name: 'Rebelle' })
+// do work - 'aggressive' is into the enumeration
+const powerpuff = Powerpuff.create({ name: 'Rebelle', mood: 'aggressive' })
 console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
