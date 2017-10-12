@@ -1,0 +1,33 @@
+.background {
+  position: fixed;
+}
+
+.background__shape-container {
+  position: absolute;
+  transform: translateX(50%);
+}
+
+.background__shape-container > svg {
+  position: absolute;
+}
+
+.background__shape-container:nth-child(3) > svg {
+  left: 80vw;
+  top: 50vh;
+}
+
+.background__shape-container:nth-child(4) > svg {
+  left: 80vw;
+}
+
+.background__shape--small {
+  width: 10vw;
+}
+
+.background__shape--medium {
+  width: 20vw;
+}
+
+.background__shape--large {
+  width: 80vw;
+}
