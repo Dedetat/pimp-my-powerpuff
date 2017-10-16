@@ -11,7 +11,7 @@
     "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build && mv build api/build/",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && git add api && git commit -m 'build to deploy' && git subtree push --prefix api heroku master && rm -R api/build"
+    "deploy": "npm run build && git add api && git commit -m 'build to deploy' && git push heroku $(git subtree split --prefix api master):master --force && rm -R api/build"
   },
   "dependencies": {
     "classnames": "^2.2.5",
