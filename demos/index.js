@@ -6,9 +6,9 @@ const Powerpuff = types
   })
 
 // - /!\ doesn't work since `name` is mandatory
-// const powerpuff = Powerpuff.create({ })
+// const rebelle = Powerpuff.create({ })
 
 // - does work has we fill out the name field
-const powerpuff = Powerpuff.create({ name: 'Rebelle' })
+const rebelle = Powerpuff.create({ name: 'Rebelle' })
 
-console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
+console.log(JSON.stringify(rebelle.toJSON(), null, 2))
