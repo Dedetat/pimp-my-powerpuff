@@ -7,8 +7,8 @@ const Powerpuff = types
   })
 
 // /!\ doesn't work since the mood 'sad' is not into the enumeration
-// const powerpuff = Powerpuff.create({ name: 'Rebelle', mood: 'sad' })
+// const rebelle = Powerpuff.create({ name: 'Rebelle', mood: 'sad' })
 
 // do work - 'aggressive' is into the enumeration
-const powerpuff = Powerpuff.create({ name: 'Rebelle', mood: 'aggressive' })
-console.log(JSON.stringify(powerpuff.toJSON(), null, 2))
+const rebelle = Powerpuff.create({ name: 'Rebelle', mood: 'happy' })
+console.log(JSON.stringify(rebelle.toJSON(), null, 2))
