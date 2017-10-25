@@ -41,7 +41,7 @@ const Powerpuff = types
     if (!snapshot) return snapshot
     if (snapshot.style) return snapshot
 
-    return { ...snapshot, style: Style.create({}) }
+    return { ...snapshot, style: {} }
   })
 
 export default Powerpuff

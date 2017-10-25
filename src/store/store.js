@@ -19,7 +19,7 @@ const Store = types
       const powerpuffs = yield fetch('/api').then(data => data.json())
 
       // save
-      self.powerpuffs = powerpuffs.map(powerpuff => Powerpuff.create(powerpuff))
+      self.powerpuffs = powerpuffs
     }),
   }))
   .actions(self => ({
@@ -30,7 +30,7 @@ const Store = types
 
 export default () => {
   const store = Store.create({
-    router: Router.create({}),
+    router: {},
     powerpuffs: [],
   })
 
