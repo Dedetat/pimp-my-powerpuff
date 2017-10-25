@@ -16,18 +16,18 @@ const Powerpuff = ({ style, className, name, id, onClick }) => {
   return (
     <div className="item-container">
       <Card style={style} className={classes}>
+        <div className="item-powerpuff-container">
+          <PowerpuffStylizer id={id} className="item-powerpuff-stylizer" />
+        </div>
         <div className="item-name">
-          <div>{name}</div>
+          {name}
           <span
             onClick={onClick}
-            className="item-name__button"
+            className="item-button"
             role="img"
             aria-label="growing-heart"
             title="✨ randomize ✨"
           >💗</span>
-        </div>
-        <div className="item-powerpuff-container">
-          <PowerpuffStylizer id={id} className="item-powerpuff-stylizer" />
         </div>
       </Card>
     </div>

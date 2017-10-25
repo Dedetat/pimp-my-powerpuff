@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Powerpuff';
-  src: url(assets/powerpuff_font.ttf);
+  font-family: 'Candice';
+  src: url(assets/Candice.ttf);
 }
 
 * {
@@ -19,15 +19,16 @@ body {
 
 .container {
   position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
 }
 
 .app h1 {
   color: #D27E7E;
-  font-family: 'Powerpuff';
-  font-size: 5em;
-  margin: auto;
-  padding-bottom: 1em;
+  font-family: 'Candice';
+  font-size: 6.5em;
   text-align: center;
   text-shadow: .2rem .2rem rgba(0, 0, 0, 0.9);
-  width: 50vw;
+  margin-top: 5vh;
 }

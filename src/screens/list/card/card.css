@@ -1,8 +1,6 @@
 .card {
   width: 20em;
-  height: 25em;
-  background-color: rgba(255, 255, 255, 0.4);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  height: 23em;
   display: flex;
   justify-content: center;
 }

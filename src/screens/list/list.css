@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 1;
   padding: 2em;
-  height: calc(100% - 8em);
 }
 
 .list > div {
