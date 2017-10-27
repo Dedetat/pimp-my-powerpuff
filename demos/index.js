@@ -48,5 +48,3 @@ console.log(JSON.stringify(store.toJSON(), null, 2))
 store.addPowerpuff('Aggressive rebelle')
 store.addPowerpuff({ name: 'Belle', mood: 'happy' })
 console.log(JSON.stringify(store.toJSON(), null, 2))
-
-console.log(JSON.stringify(store.toJSON(), null, 2))
