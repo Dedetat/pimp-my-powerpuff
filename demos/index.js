@@ -49,5 +49,6 @@ store.addPowerpuff('Aggressive rebelle')
 store.addPowerpuff({ name: 'Belle', mood: 'happy' })
 console.log(JSON.stringify(store.toJSON(), null, 2))
 
-store.setEdited(store.powerpuffs[1])
-console.log(JSON.stringify(store.toJSON(), null, 2))
+// oups, doesn't work since the Powerpuff model doesn't define a field to be an identifier
+// store.setEdited(store.powerpuffs[1])
+// console.log(JSON.stringify(store.toJSON(), null, 2))
