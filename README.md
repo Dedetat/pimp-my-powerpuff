@@ -8,8 +8,8 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 > Final application link : https://powerpuff.herokuapp.com/
 
 ## Who
- - Delphine MILLET [ [Twitter](https://twitter.com/milletdelphine) | [Github](https://github.com/delphinemillet) ]
- - Fabien JUIF [ [Twitter](https://twitter.com/fabienjuif) | [Github](https://github.com/fabienjuif) ]
+ - Delphine MILLET [[Twitter](https://twitter.com/milletdelphine) | [Github](https://github.com/delphinemillet)]
+ - Fabien JUIF [[Twitter](https://twitter.com/fabienjuif) | [Github](https://github.com/fabienjuif)]
 
 ## Deck
  - [French version](https://docs.google.com/presentation/d/1GoHkiHX7LgyHSp-Y7EWH_Rpb6s4m1Sbl593YKGG89Co/edit?usp=sharing)
@@ -21,6 +21,25 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
  - [Devfest Nantes, France - 2017](https://devfest2017.gdgnantes.com/)
 
 ## Livecoding
+ - [Model](#model)
+    * [First model](#30---create-the-first-model-and-instanciate-it)
+    * [Make fields optional](#31---make-fields-optional)
+    * [Use more complex types](#32---use-more-complex-types)
+ - [Actions](#actions)
+    * [Mutate the model](#33---updating-the-model-the-natural-way)
+    * [Use mobx-state-tree actions](#34---updating-the-model-mobx-state-tree-way)
+ - [Views](#views)
+ - [Lifecycle](#lifecycle)
+    * [preProcessSnapshot](#36---preprocesssnapshot)
+    * [afterCreate](#37---aftercreate)
+ - [Nested models](#nested-models)
+ - [References and identifiers](#references--identifiers)
+    * [Creating a reference](#39---creating-a-reference)
+    * [Reference an identifier](#40---reference-an-identifier)
+ - [Utils](#utils)
+    * [onPatch](#41---onpatch)
+    * [onSnapshot](#42---onsnapshot)
+
 ### Model
 > This is about creating our first model
 
@@ -87,7 +106,7 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 ### Lifecycle
 > It can be handy to do some computing during the model lifecycle. mobx-state-tree exposes lifecycle hooks that you can find in the [documentation](https://github.com/mobxjs/mobx-state-tree#lifecycle-hooks-for-typesmodel)
 
-#### [#36](https://github.com/Dedetat/powerpuff-yourself/pull/36/files) - PreProcessSnapshot
+#### [#36](https://github.com/Dedetat/powerpuff-yourself/pull/36/files) - preProcessSnapshot
 > Instead of injecting a snapshot to create a new Powerpuff, we want to use a string describing her.
  1. `preProcessSnapshot` is called before the model instanciation 💁‍♀️
  2. It takes the snapshot given to create the instance and returns a new snapshot matching the model
@@ -117,4 +136,11 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 
 
 ### References & Identifiers
+#### [#39](https://github.com/Dedetat/pimp-my-powerpuff/pull/39/files) - Creating a reference
+
+#### [#40](https://github.com/Dedetat/pimp-my-powerpuff/pull/40/files) - Reference an identifier
+
 ### Utils
+#### [#41](https://github.com/Dedetat/pimp-my-powerpuff/pull/41/files) - onPatch
+
+#### [#42](https://github.com/Dedetat/pimp-my-powerpuff/pull/42/files) - onSnapshot
