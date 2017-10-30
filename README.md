@@ -13,6 +13,7 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 
 ## Deck
  - [French version](https://docs.google.com/presentation/d/1GoHkiHX7LgyHSp-Y7EWH_Rpb6s4m1Sbl593YKGG89Co/edit?usp=sharing)
+ - [English version](https://docs.google.com/presentation/d/1lqNMQp8cLJQjHmLIiL-zV2IoBODzL0qrzy62nu7e7pY/edit?usp=sharing)
 
 ## Videos
  - [Devfest Nantes, France - 2017 /fr/](https://www.youtube.com/watch?v=dmVFTX4Wyyo)
