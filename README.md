@@ -15,7 +15,7 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
  - [French version](https://docs.google.com/presentation/d/1GoHkiHX7LgyHSp-Y7EWH_Rpb6s4m1Sbl593YKGG89Co/edit?usp=sharing)
 
 ## Videos
- - Comming soon
+ - [Devfest Nantes, France - 2017 /fr/](https://www.youtube.com/watch?v=dmVFTX4Wyyo)
 
 ## Events
  - [Devfest Nantes, France - 2017](https://devfest2017.gdgnantes.com/)
