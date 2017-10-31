@@ -137,9 +137,23 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 
 
 ### References & Identifiers
+> We have a centralized Store which contains a list of Powerpuffs and we can edit one from its index in the array. What if the edited one is always store.edited ?
+
 #### [#39](https://github.com/Dedetat/pimp-my-powerpuff/pull/39/files) - Creating a reference
+> First of all we add the `edited` field and declare it as a reference
+ 1. We create a new field named `edited` which contains the reference to the currently edited Powerpuff 💡. You can see it like a reference which an editing screen can work with
+ 2. This field is typed `types.reference` of the `Powerpuff` model
+ 3. We create an action to set this field, go on and call it `setEdited`!
+ 4. Set the first powerpuff as the edited one 👍
+ 5. Print the `store` snapshot
+ 6. Oups, it doesn't work 🙀
 
 #### [#40](https://github.com/Dedetat/pimp-my-powerpuff/pull/40/files) - Reference an identifier
+> A reference needs an identifier
+  1. We must add an `identifier` to our Powerpuff, a number is fine, let's call it... hm... `id` 😎 !!
+  2. The `id` is now required, we add it to `preProcessSnapshot` as a random number (🤢, this is just for the demo) and to the `belle` Powerpuff instance as an arbitary number
+  3. Let's try to print the `Store` snapshot now!
+  4. 🎉 it works 🎉, you can see the snapshot doesn't copy the value into `edited` field (which is a reference), **mobx-state-tree** takes care of optimisations, what a good boy 🐶!
 
 ### Utils
 #### [#41](https://github.com/Dedetat/pimp-my-powerpuff/pull/41/files) - onPatch
