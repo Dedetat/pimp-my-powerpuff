@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://github.com/mobxjs/mobx-state-tree/blob/master/docs/logo.png" height="100" />
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/ZTqMAE2.png" height="300" />
+</p>
+
 # Pimp my Powerpuff
 Welcome to our source speech repository about [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) and powerpuffs.
 
@@ -179,4 +186,4 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 
 ---
 
-If you like this demonstrations/livecoding, you can tweet about it! - [@MilletDelphine](https://twitter.com/MilletDelphine) and [@fabienjuif](https://twitter.com/fabienjuif)
+If you like this demonstration/livecoding, you can tweet about it! - [@MilletDelphine](https://twitter.com/MilletDelphine) and [@fabienjuif](https://twitter.com/fabienjuif)
