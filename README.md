@@ -156,6 +156,27 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
   4. 🎉 it works 🎉, you can see the snapshot doesn't copy the value into `edited` field (which is a reference), **mobx-state-tree** takes care of optimisations, what a good boy 🐶!
 
 ### Utils
+> We are sick of console.log everywhere, maybe mobx-state-tree can help us ? Yes it can! 😎
+> Let's see some debugging tools it provides
+
 #### [#41](https://github.com/Dedetat/pimp-my-powerpuff/pull/41/files) - onPatch
+> How can we track each changes done on our store ?
+ 2. We import `onPatch` from **mobx-state-tree**: it allows us to listen to all patches applied to our store. Here we use it to simply print these patches
+ 3. We remove all the `console.log` and add the `onPatch` listener to our `store` instance, right after we created it
+ 4. Now as we run the demo and we see patches applied to the `store` printed to the console
+ 5. You can see 👀 that a patch contains:
+    - path
+    - action type
+    - value
+ 6. This is our favorite tool to debug our store 💚!
 
 #### [#42](https://github.com/Dedetat/pimp-my-powerpuff/pull/42/files) - onSnapshot
+> What if we want to print the complete store snapshot after each mutation ? 🤔
+ 1. Ok this one, the last one, is an easy one!
+ 2. Replace all the `onPatch` by `onSnapshot` and tada 🎉 🎉!!
+ 3. You can see on the console, all the `store`'s snapshots for each mutation 😁
+ 4. This is great and this is what allows **mobx-state-tree** to behave like a Redux store. You can see a [demo from mobx-state-tree repository](https://github.com/mobxjs/mobx-state-tree/blob/4c2b19ec4a6a8d74064e4b8a87c0f8b46e97e621/examples/redux-todomvc/src/index.js#L6)!
+
+---
+
+If you like this demonstrations/livecoding, you can tweet about it! - [@MilletDelphine](https://twitter.com/MilletDelphine) and [@fabienjuif](https://twitter.com/fabienjuif)
