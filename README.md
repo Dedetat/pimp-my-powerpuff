@@ -168,14 +168,14 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
 
 #### [#41](https://github.com/Dedetat/pimp-my-powerpuff/pull/41/files) - onPatch
 > How can we track each changes done on our store ?
- 2. We import `onPatch` from **mobx-state-tree**: it allows us to listen to all patches applied to our store. Here we use it to simply print these patches
- 3. We remove all the `console.log` and add the `onPatch` listener to our `store` instance, right after we created it
- 4. Now as we run the demo and we see patches applied to the `store` printed to the console
- 5. You can see 👀 that a patch contains:
+ 1. We import `onPatch` from **mobx-state-tree**: it allows us to listen to all patches applied to our store. Here we use it to simply print these patches
+ 2. We remove all the `console.log` and add the `onPatch` listener to our `store` instance, right after we created it
+ 3. Now as we run the demo and we see patches applied to the `store` printed to the console
+ 4. You can see 👀 that a patch contains:
     - path
     - action type
     - value
- 6. This is our favorite tool to debug our store 💚!
+ 5. This is our favorite tool to debug our store 💚!
 
 #### [#42](https://github.com/Dedetat/pimp-my-powerpuff/pull/42/files) - onSnapshot
 > What if we want to print the complete store snapshot after each mutation ? 🤔
