@@ -8,7 +8,7 @@
 # Pimp my Powerpuff
 Welcome to our source speech repository about [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) and powerpuffs.
 
- - All informations are in the README 👌
+ - All the information is in the README 👌
  - Source code of our livecoding is described here too ! 📖
  - Feel free to open issues / PR 🤗
 
