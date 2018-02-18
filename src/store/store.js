@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { types, onPatch, process } from 'mobx-state-tree'
+import { types, onPatch, flow } from 'mobx-state-tree'
 import Powerpuff from './powerpuff'
 import Router from './router'
 
@@ -11,7 +11,7 @@ const Store = types
   })
   .named('store')
   .actions(self => ({
-    load: process(function* load() {
+    load: flow(function* load() {
       // reinit
       self.powerpuffs = []
 
