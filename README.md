@@ -19,13 +19,13 @@ Welcome to our source speech repository about [mobx-state-tree](https://github.c
  - Fabien JUIF [[Twitter](https://twitter.com/fabienjuif) | [Github](https://github.com/fabienjuif)]
 
 ## Deck
- - [French version](https://docs.google.com/presentation/d/1GoHkiHX7LgyHSp-Y7EWH_Rpb6s4m1Sbl593YKGG89Co/edit?usp=sharing)
- - [English version](https://docs.google.com/presentation/d/1lqNMQp8cLJQjHmLIiL-zV2IoBODzL0qrzy62nu7e7pY/edit?usp=sharing)
+ - [Last version](https://drive.google.com/open?id=1FLMmPD5K39rOtRJaB72wTSlDa2QvfbeLj6I0rRv7bqo)
 
 ## Videos
  - [Devfest Nantes, France - 2017 /fr/](https://www.youtube.com/watch?v=dmVFTX4Wyyo)
 
 ## Events
+ - [Touraine Tech, France - 2018](https://touraine.tech/)
  - [Devfest Nantes, France - 2017](https://devfest2017.gdgnantes.com/)
 
 ## Livecoding
